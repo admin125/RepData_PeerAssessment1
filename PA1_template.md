@@ -1,4 +1,9 @@
-# Reproducable Research Peer Assessment 1
+---
+title: "Reproducable Research Peer Assessment 1"
+output:
+  html_document:
+    keep_md: true
+---
 
 
 ##Loading and Preprocessing the data
@@ -60,7 +65,7 @@ names(total_steps_per_day)<-c("Date", "Steps")
 hist(total_steps_per_day$Steps, xlab="Steps/Day", main="Histogram of number of steps per day")
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 2. Calculate the mean and median of the total of number of steps/day
 
@@ -100,7 +105,7 @@ names(avg_steps_per_interval)<-c("Interval", "Steps")
 plot(avg_steps_per_interval,ylab="Average #Steps in this interval", type="l")
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -175,7 +180,7 @@ names(total_steps_per_day)<-c("Date", "Steps")
 hist(total_steps_per_day$Steps, xlab="Steps/Day", main="Histogram of number of steps per day")
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 
 
 Calculate the mean of the total of number of steps/day
 
@@ -250,7 +255,7 @@ plot(avg_steps_int_weekend,type="l",ylab="Avg. #of steps in this interval", xlab
 plot(avg_steps_int_weekday,type="l", ylab="Avg. #of steps in this interval", xlab="Interval", main="Weekdays")
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
 
 Conclusion: there are differences in the patterns between weekdays and weekend days. 
 
